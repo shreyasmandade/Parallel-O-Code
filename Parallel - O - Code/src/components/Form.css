@@ -1,0 +1,293 @@
+body{
+    background: radial-gradient(ellipse at bottom, #0a1019 0%, #03071f 100%) !important;
+    
+}
+.heading{
+    text-align: center;
+    color: chartreuse;
+    margin: 50px auto;
+}
+#contactform {
+    display: block;
+    margin: 0px auto 30px auto;
+    position: relative;
+    /* overflow: hidden; */
+    z-index: 500;
+    max-width: 800px;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+.input-effect{
+    position: relative;
+    margin: auto 100px;
+    margin-bottom: 30px;
+}  
+.arrow::before { border-top-color: white !important; }
+#contactform input, select{
+    border: 0;
+    color: royalblue;
+    padding: 20px; 
+    font-size: 17px;
+    background-color: transparent;
+    font-weight: 200;
+    border: 1px solid white;
+    transition-duration: 1s;
+    letter-spacing: 3px;
+    
+}
+
+select{
+  width: 100%;
+  color: red;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase !important; 
+  transition: 0.3s;
+  z-index: -1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+option {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+select:focus{
+  outline: none;
+}
+
+select option{
+  font-size: 20px;
+}
+
+#contactform input::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+  
+#submit {
+    margin: auto;
+    width: 90%;
+    padding: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 1px solid white ;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    transition: ease-out 0.6s;  
+}
+
+#submit:hover{
+  color: #23a0ff;
+  backdrop-filter: blur(3px) ;
+}
+
+#update, .paymentDone {
+  margin: auto;
+  margin: 0px 10%;
+  z-index: 1000;  
+  text-align: center;
+}
+#update p,.paymentDone p {
+    color: royalblue;
+    font-size: 35px;
+    font-variant: small-caps;
+}    
+
+
+@media only screen and (max-width: 992px){
+  #update, .paymentDone{
+    margin: 0 2%;
+  }
+  #update p {
+    font-size: 30px;
+  }
+}
+
+.paymentDone button{
+  margin: 30px;
+}
+
+@media screen and (max-width: 820px){
+  .btn {
+    width: 80%;
+    margin: 20px auto !important;
+  }
+}
+
+
+  #btn {
+    width: 150px;
+    border-radius: 0;
+    border: 0;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  #btn:hover {
+    border-color: #00ffff;
+    transition: 0.5s;
+  }
+  
+
+  
+  .siz {
+    font-size: 30px;
+  }
+
+  input {
+    font: 15px ;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+  
+  .effect-21 {
+    border: 1px solid #ccc;
+    padding: 7px 14px;
+    transition: 0.4s;
+    outline: none;
+    background: transparent;
+  }
+  
+  .effect-21 ~ .focus-border:before,
+  .effect-21 ~ .focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: crimson;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .effect-21 ~ .focus-border:after {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    transition-delay: 0.6s;
+  }
+  .effect-21 ~ .focus-border i:before,
+  .effect-21 ~ .focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: crimson;
+    transition: 0.2s;
+  }
+  .effect-21 ~ .focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    transition-delay: 0.4s;
+  }
+  .effect-21:focus ~ .focus-border:before,
+  .effect-21:focus ~ .focus-border:after{
+    width: 100%;
+    transition: 0.2s;
+    transition-delay: 0.6s;
+  }
+  .effect-21:focus ~ .focus-border:after{
+    transition-delay: 0.2s;
+  }
+  .effect-21:focus ~ .focus-border i:before,
+  .effect-21:focus ~ .focus-border i:after,
+  .has-content.effect-21 ~ .focus-border i:before,
+  .has-content.effect-21 ~ .focus-border i:after {
+    height: 100%;
+    transition: 0.2s;
+  }
+  .effect-21:focus ~ .focus-border i:after{
+    transition-delay: 0.4s;
+  }
+  .effect-21 ~ label {
+    position: absolute;
+    left: 14px;
+    width: 90%;
+    top: 20px;
+    color: #aaa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+  }
+  
+  /* .effect-21:focus ~ label,
+  .has-content.effect-21 ~ label, */
+  input:focus ~ label,
+  input:not(:placeholder-shown) + label
+  {
+    position: absolute;
+    top: 18px;
+    left: -100px;
+    text-align: end;
+    font-size: 17px;
+    color: royalblue;
+    transition: 0.3s;    
+    letter-spacing: 1px;
+    padding-right: 5px;
+    overflow-wrap: break-word;
+    max-width: 100px;
+    float: right;
+    /* transform: rotate(360deg); */
+  }
+
+  @media screen and (max-width: 600px){
+    .input-effect{
+        margin-right: 50px;
+    }
+    select{
+      font-size: 0.8em !important;
+      padding-left: 5px;
+      padding-right: 2px;
+    }
+    .effect-21 ~ label {
+      font-size: 14px;
+    }
+    input:focus ~ label,
+    input:not(:placeholder-shown) + label{
+      font-size: 15px;
+      left: -100px;
+    }
+    input:focus {
+      /* width: auto; */
+      margin: auto;
+    }
+    input:focus ~ .long-label,
+    input:not(:placeholder-shown) + .long-label{
+      top: 15px;
+    }
+  }
+
+input:focus ~ .long-label,
+input:not(:placeholder-shown) + .long-label{
+    top: 8px;
+}
+input:focus ~ .long-label-xl,
+input:not(:placeholder-shown) + .long-label-xl{
+    top: 0px;
+    font-size: 16px;
+}
+@media screen and (max-width: 340px){
+  .long-label-xl{
+    top: 0px !important;
+  }
+}
